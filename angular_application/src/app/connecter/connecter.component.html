@@ -1,0 +1,87 @@
+<app-header></app-header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>se connecter</title>
+    
+</head>
+<body>
+    <app-header></app-header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<div class="partie">
+    <div class="div1">
+        <table class="table table-hover" c>
+            <thead>
+             
+                <h2 class="client-enregistres">
+                    Clients enregistrés
+                </h2>
+             
+            </thead>
+            <tbody>
+             
+                <th scope="row">
+    
+                    <p class="paragraphe">
+                        Si vous avez un compte, connectez-vous avec votre adresse e-mail.
+                    </p>
+                    <label for="Username">Email*</label><br>
+                    <input type="email" class="email" id="exampleInputEmail1"  aria-describedby="emailHelp" required>
+                    <br><br>
+                    <label for="exampleInputPassword1">Mot de passe*</label><br>
+                    <input type="password" class="email" id="exampleInputPassword1" [ngClass]="{'error': passwordError}" required>
+                    <br><br>
+                    <button class="boutton" (click)="verifier($event)" onclick="verify()">SE CONNECTER</button><br><br>
+                    <p class="champs-obligatoire">
+                        *Champs obligatoires
+                    </p>
+                </th>
+    
+    
+            </tbody>
+          </table>  
+    </div>
+
+
+
+    <div class="div1">
+        <table class="table table-hover" >
+            <thead>
+             
+                <h2 class="client-enregistres">
+                    Nouveaux clients
+                </h2>
+    
+    
+              
+            </thead>
+            <tbody>
+              
+                <th scope="row">
+    
+                    <p class="paragraphe">
+                        Créer un compte a de nombreux avantages : commander plus rapidement, enregistrer plusieurs adresses, suivre vos commandes et plus encore.
+                    </p>
+
+                    <br>
+                    <button class="boutton"><a href="/create_acount" class="create" style="text-decoration: none;">CREER UN COMPTE</a></button>
+                </th>
+    
+              
+    
+            </tbody>
+          </table>  
+    </div>
+</div>
+
+ 
+</body>
+</html>
+<img src="assets/img/logo-removebg-preview.png" alt="logo" class="logo" width="34%">
+
+<app-footer>
+
+</app-footer>

@@ -1,0 +1,68 @@
+
+<app-header></app-header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>se connecter</title>
+    
+</head>
+<body>
+    <app-header></app-header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<div class="partie">
+    <div class="div1">
+        <table class="table table-hover" c>
+            <thead>
+             
+                <h2 class="client-enregistres">
+                    Informations personnelles
+                </h2>
+             
+            </thead>
+            <tbody>
+             
+                <th scope="row">
+    
+                    
+                    <label for="Username">Prénom*</label><br>
+                    <input type="text" class="email" id="exampleInputFirstName1"  aria-describedby="FirstNameHelp" required>
+                    <br><br>
+                    <label for="Username">Nom*</label><br>
+                    <input type="text" class="email" id="exampleInputLastName1"  aria-describedby="LastNameHelp" required>
+                    <br><br>
+                    <label for="Username">Email*</label><br>
+                    <input type="email" class="email" id="exampleInputEmail1"  aria-describedby="emailHelp" required>
+                    <br><br>
+                    <label for="exampleInputPassword1">Mot de passe*</label><br>
+                    <input type="password" class="email" id="exampleInputPassword1" [ngClass]="{'error': passwordError}" required>
+                    <br><br>
+                    <button class="boutton" (click)="verifier($event)" onclick="verify()">SE CONNECTER</button><br><br><br>
+                    <p class="champs-obligatoire">
+                        *Champs obligatoires
+                    </p>
+                </th>
+    
+    
+            </tbody>
+          </table>  
+    </div>
+
+
+
+    <div class="div1">
+        <table class="table table-hover" >
+          </table>  
+    </div>
+</div>
+
+ 
+</body>
+</html>
+<br><br><br><br>
+
+<app-footer>
+
+</app-footer>
